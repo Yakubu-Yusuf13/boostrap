@@ -21,6 +21,10 @@ $recent = $scopeQuery->fetchAll();
 require_once dirname(__DIR__) . '/includes/layout.php';
 page_header('Support dashboard', 'admin', 'dashboard');
 ?>
+<figure class="dashboard-admissions">
+    <img src="<?= e(url('assets/images/dashboard-admissions.png')) ?>" alt="Federal College of Wildlife Management admissions and academic programmes">
+    <figcaption>Federal College of Wildlife Management · New Bussa, Niger State</figcaption>
+</figure>
 <div class="welcome-panel">
     <div><h2><?= $user['role'] === 'admin' ? 'Support operations at a glance.' : 'Your department case desk.' ?></h2><p><?= $user['role'] === 'admin' ? 'Review incoming complaints and route each case to the team best placed to help.' : 'Review and update complaints assigned to ' . e($user['department_name'] ?: 'your department') . '.' ?></p></div>
     <a class="btn" href="<?= e(url('admin/cases.php')) ?>"><i class="feather icon-inbox"></i> View cases</a>

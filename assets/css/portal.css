@@ -152,6 +152,9 @@ body.portal-body { margin: 0; background: #f5f7f6; color: var(--portal-ink); fon
 .staff-hero > div { position: relative; z-index: 1; max-width: 580px; }
 .staff-hero h2 { margin: 8px 0 5px; color: #fff; font-size: 24px; font-weight: 700; }
 .staff-hero p { margin: 0; color: rgba(255,255,255,.9); font-size: 12px; line-height: 1.6; }
+.dashboard-admissions { position: relative; overflow: hidden; margin: 0 0 20px; border: 1px solid var(--portal-line); border-radius: 12px; background: #e8eee9; }
+.dashboard-admissions img { display: block; width: 100%; height: auto; }
+.dashboard-admissions figcaption { position: absolute; right: 12px; bottom: 10px; left: 12px; color: #fff; font-size: 10px; font-weight: 700; text-shadow: 0 1px 4px rgba(0,0,0,.8); }
 @media (max-width: 991px) {
     .portal-sidebar { width: 218px; flex-basis: 218px; }
     .portal-header, .portal-content { padding-right: 22px; padding-left: 22px; }
