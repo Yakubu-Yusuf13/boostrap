@@ -15,6 +15,10 @@ $recent = $recentQuery->fetchAll();
 require_once dirname(__DIR__) . '/includes/layout.php';
 page_header('My dashboard', 'student', 'dashboard');
 ?>
+<figure class="dashboard-admissions">
+    <img src="<?= e(url('assets/images/dashboard-admissions.png')) ?>" alt="Federal College of Wildlife Management admissions and academic programmes">
+    <figcaption>Federal College of Wildlife Management · New Bussa, Niger State</figcaption>
+</figure>
 <div class="welcome-panel">
     <div><h2>Welcome, <?= e(explode(' ', trim($user['full_name']))[0]) ?>.</h2><p>Tell us what you need help with. Your support requests and their progress will stay together here.</p></div>
     <a class="btn" href="<?= e(url('student/new-ticket.php')) ?>"><i class="feather icon-plus"></i> New complaint</a>
